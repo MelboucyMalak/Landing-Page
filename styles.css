@@ -17,11 +17,12 @@ body{
     padding: 8px;
 }
 
-.body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     
+.logo{
+    font-size: 24px;
+    color: #f9faf8;
+    margin-left: 200px;
+    padding: 8px;
+    font-weight: 900;
 }
 
 ul{
@@ -31,6 +32,18 @@ ul{
     margin-right: 200px;
     list-style: none;
  }
+ 
+ a{
+    text-decoration: none;
+    color: none;
+ }
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     
+}
 
  .description{
     background-color: #1f2937;
@@ -45,6 +58,7 @@ ul{
     height: 300px;
     display: flex;
     align-items: stretch;
+    gap: 27px;
 }
 
 .hero{
@@ -58,20 +72,23 @@ ul{
     color: #f9faf8;
 }
 
-.second, .links{
+.second, a{
     font-size: 18px;
     color: #e5e7eb;
 }
 
 button{
+    background-color: #4285F4;
     padding: 8px 30px;
     color: white;
     border-radius: 8px;
     margin-top: 8px;
-    border: 1px solid #3882f6;
     font-size: 18px;
     font-weight: 900;
+}
 
+.hero button{
+    border: 1px solid #4285F4;
 }
 
 .image{
@@ -85,16 +102,12 @@ button{
     display: block;
 }
 
-.logo{
-    font-size: 24px;
-    color: #f9faf8;
-    margin-left: 200px;
-    padding: 8px;
-    font-weight: 900;
-}
-
-button, .cta{
-    background-color: #3882f6;
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
 }
 
 
@@ -103,29 +116,88 @@ button, .cta{
     color: #1f2937;
     font-weight: 900;
 }
+.cards{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    gap: 48px;
+}
+.card img{
+    border: 3px solid rgb(46, 144, 224);
+    height: 153px;
+    border-radius: 16px;
+    width: 100%;
+
+}
+
+.card{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 153px; 
+}
+
+.card div{
+    text-align: center;
+    color: #67696b;
+}
 
 .quote{
     background-color: #e5e7eb;
 }
+.quotecontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 210px;
+    justify-content: center;
+}
 
 blockquote{
-    font:italic;
-    font-size: 36px;
+    font-style: italic;
+    font-size: 34px;
     color: #1f2937;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.ref{
+    align-self: flex-end;
+    font-weight: 900;
+    margin-right: 32px;
+    color: #1f2937;
+    font-size: 24px;
 }
-.cards{
-    display: flex;
-    justify-content: center;
-}
-.card img{
-    border: 3px solid rgb(46, 189, 224);
-    height: 150px;
-    width: auto;
 
+ 
+
+.signupcontainer{
+    padding: 90px 150px;
+
+}
+.signup{
+    background-color: #4285F4;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 90px;
+    border-radius: 8px;
+    color: white;
+}
+
+.cta .main{
+    font-size:23px;
+}
+.cta .second{
+    font-size: 16px;
+}
+
+.signup button{
+    align-self: flex-end;
+    border: 2px solid white;
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 90px;
 }
